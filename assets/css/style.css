@@ -28,6 +28,9 @@
 =====================================
 */
 
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,800,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -45,10 +48,37 @@ body, html{
     overflow-x:hidden;
 }
 
+.flèche {
+     animation: bounce 0.7s ease infinite;
+}
+
+
+
+/* img*/
+
+.imgweb {width:250px;
+    padding: 35px;
+    }
+
+
+.row more-skill text-center {
+    margin:auto;
+}
+
+
+.transition {
+    background-color: #de7172;
+    width:100%;
+    height: 10px;
+    margin: auto;
+}
+
+
+
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #de7172;
 }
 a,
 a > * {
@@ -104,7 +134,7 @@ a,
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     margin:0;
-    text-transform: uppercase;
+
 }
 
 h1 {
@@ -115,6 +145,9 @@ h1 {
 h2 {
     font-size: 30px;
     line-height: 30px;
+    font-family: 'Dosis';
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -135,6 +168,10 @@ h6 {
 }
 
 
+.flèche {width:150px;
+        margin-top:50px;
+        margi}
+
 
 /* === FORM STYLE === */
 .form-control {
@@ -146,7 +183,7 @@ h6 {
 }
 
 .form-control:focus {
-    border-color: #68c3a3;
+    border-color: #de7172;
     box-shadow: none;
 }
 
@@ -191,7 +228,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#68c3a3;
+    background-color:#de7172;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -202,13 +239,13 @@ h6 {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
+    background-color: #de7172;
+    border-color: #de7172;
 }
 
 /*btn-info*/
 .btn-info{
-    background-color:#52b3d9;
+    background-color: #de7172;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -234,7 +271,7 @@ h6 {
 .btn-default.focus, 
 .btn-default:active, 
 .btn-default.active{
-    color: #68c3a3;
+    color: #de7172;
     background-color: #fff;
     border-color: #fff;
 }
@@ -248,8 +285,8 @@ button:focus {
 /*IMAGES*/
 
 .logoheader {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
 }
 
@@ -292,7 +329,7 @@ ul.list-check li{
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #de7172;
     margin-right: 10px;
 }
 
@@ -337,7 +374,7 @@ ul.list-check li::before {
 
 
 #home {
-	background: url(../images/home2.jpg) no-repeat center center;
+	background: url(../images/home2.png) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
@@ -347,7 +384,7 @@ ul.list-check li::before {
 }
 #home:before {
 	content: "";
-	background-color: rgba(26, 30, 35, 0.85);
+    background-color: rgba(26, 30, 35, 0.1);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -358,7 +395,7 @@ ul.list-check li::before {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 55%;
 	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
@@ -370,18 +407,28 @@ ul.list-check li::before {
 }
 
 .intro h1{
-	font-size: 60px;
+	font-size: 90px;
 	line-height: 80px;
 	margin-bottom: 16px;
 	color: white;
+    line-height: 1.5;
+    font-family: 'Open Sans Condensed';
+    text-shadow: 2px 1px 5px rgba(147, 152, 152, 0.71);
+    letter-spacing: 0.2em
 }
 .intro h1 span{
 	color: #de7172;
+    opacity: 0.8;
 }
 .intro p{
-	color: #f7f7f7;
+	color: white;
 	margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 90px;
+    font-family: 'Open Sans Condensed';
+    text-shadow: 2px 1px 5px rgba(147, 152, 152, 0.71);
+    letter-spacing: 0.1em;
+    
+    
 }
 
 .intro-sub {
@@ -402,9 +449,9 @@ SOCIAL ICON
 }
 .social-icons a i{
     position: relative;
-    color: #fff;
+    color: white;
     font-size: 18px;
-    margin: 0 7px;
+    margin: 7px;
     line-height: 40px;
     text-align: center;
     width: 40px;
@@ -423,21 +470,12 @@ SOCIAL ICON
     top: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transition: all 300ms;
-       -moz-transition: all 300ms;
-         -o-transition: all 300ms;
-            transition: all 300ms;            
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .social-icons a i:hover::after{
-    background: #68c3a3;
+    background: #de7172;
     border: 1px solid transparent;
     z-index: 0;
 }
@@ -488,7 +526,7 @@ SOCIAL ICON
     visibility: hidden;
     opacity:0;
     border: 1px solid #ddd;
-    border-top: 2px solid #68c3a3;
+    border-top: 2px solid #de7172;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
@@ -539,7 +577,7 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #de7172;
 }
 
 .navbar-custom .navbar-brand {
@@ -671,7 +709,7 @@ SOCIAL ICON
     border: 1px solid #fff;
 }
 .video-intro a:hover {
-    color: #68c3a3;
+    color: #de7172;
     background-color: #fff;
     border: 1px solid transparent;
 }
@@ -715,7 +753,7 @@ Resume Timeline
     top: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #de7172;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -731,7 +769,7 @@ Resume Timeline
     bottom: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #de7172;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -749,6 +787,7 @@ Resume Timeline
     width: 2px;
     margin-left: -1.5px;
     background-color: #e1e1e1;
+    border: 1px solid #de7172;
 }
 
 .timeline>li {
@@ -804,7 +843,7 @@ Resume Timeline
     line-height: 20px;
     font-weight: 700;
     display: block;
-    color: #2c3e50;
+    color: #de7172;
     top: 0;
     float: left;
 }
@@ -866,7 +905,7 @@ Resume Timeline
     float: left;
     width: 43%;
     text-align: right;
-    border: 1px solid #eee;
+    border: 1px solid #de7172;
     position: relative;
 }
 
@@ -881,7 +920,7 @@ Resume Timeline
 }
 
 .timeline-content::after{
-    border: 1px solid #eee;
+    border: 1px solid #de7172;
     width: 100%;
     position: absolute;
     content: "";
@@ -892,7 +931,7 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
+    background: #de7172;
     color: #fff;
 }
 
@@ -906,26 +945,26 @@ Resume Timeline
 }
 .timeline>li .timeline-panel::before {
     left: 100%;
-    border-left: 12px solid #ECECEC;
+    border-left: 12px solid #de7172;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #de7172;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::before {
     right: 100%;
-    border-right: 12px solid #ECECEC;
+    border-right: 12px solid #de7172;
     -webkit-transition:all 400ms;
     -moz-transition:all 400ms;
     -o-transition:all 400ms;
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #de7172;
     border-left: 0;
 }
 
@@ -947,7 +986,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #de7172;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
@@ -960,7 +999,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #de7172;
     border-left: 0;
 }
 
@@ -1019,7 +1058,7 @@ Resume Timeline
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #de7172;
 }
 .progress-bar span{
     position: absolute;
@@ -1086,9 +1125,10 @@ Resume Timeline
 .chart-text span {
     font-size: 18px;
     font-weight: 400;
-    text-transform: capitalize;
     display: block;
     margin-top: 20px;
+    width:200px;
+    margin: auto;
 }
 
 /*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
@@ -1130,7 +1170,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #de7172;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1140,7 +1180,7 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
+    background: #de7172;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -1153,7 +1193,7 @@ Resume Timeline
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 10px solid rgba(104, 195, 163, 1);
+    border-top: 10px solid #de7172 ;
     bottom: -9px;
     left: 50%;
     margin-left: -8px;
@@ -1197,7 +1237,7 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #de7172;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -1212,7 +1252,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #de7172;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1222,14 +1262,14 @@ Resume Timeline
             transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #68c3a3;
+    background-color: #de7172;
 }
 
 .portfolio-info {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #68c3a3;
+    background-color: #de7172;
     color: #fff;
     height: 45px;
     width: 100%;
@@ -1339,7 +1379,7 @@ Resume Timeline
     top: -10px;
     width: 40px;
     height: 40px;
-    background-color: #68c3a3;
+    background-color: #de7172;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1391,7 +1431,7 @@ Resume Timeline
     color: #282828;
 }
 .entry-title a:hover{
-    color: #68c3a3;
+    color: #de7172;
 }
 .entry-meta {
     color: #afafaf;
@@ -1408,7 +1448,7 @@ Resume Timeline
     font-weight: 400;
 }
 .entry-meta ul li a:hover{
-    color: #68c3a3;
+    color: #de7172;
 }
 
 .blog-more {
@@ -1450,17 +1490,17 @@ Icon for all respective meta
 
 /* === Hire Section === */
 .hire-section {
-    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
+    background: url(../../assets/images/hire-bg.jpg) no-repeat top center #de7172;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #de7172, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, #de7172, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, #de7172, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #de7172, rgba(104, 195, 163, 0.7)); /*Standard*/
 }
 
 .hire-section h2 {
@@ -1550,7 +1590,7 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #de7172;
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -1570,44 +1610,6 @@ Icon for all respective meta
  * Mouse animate icon
 /* ---------------------------------------------- */
 
-.mouse-icon {
-	position: absolute;
-	left: 50%;
-	bottom: 40px;
-	border: 2px solid #fff;
-	border-radius: 16px;
-	height: 50px;
-	width: 30px;
-	margin-left: -17px;
-	display: block;
-	z-index: 10;
-}
-
-.mouse-icon .wheel {
-    -webkit-animation-name: drop;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-    animation-name: drop;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-}
-
-.mouse-icon .wheel {
-	position: relative;
-	border-radius: 10px;
-	background: #fff;
-	width: 4px;
-	height: 10px;
-	top: 4px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 @-webkit-keyframes drop {
     0%   { top:5px;  opacity: 0;}
@@ -1810,7 +1812,7 @@ Icon for all respective meta
 }
 
 .personal-info h1 span{
-    color:#68c3a3;
+    color:#de7172;
 }
 .personal-info p {
     margin-bottom: 40px;

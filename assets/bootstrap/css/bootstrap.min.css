@@ -2061,7 +2061,7 @@ pre code {
 }
 
 .col-xs-12 {
-    width: 100%
+    width: 100%;
 }
 
 .col-xs-11 {
@@ -2263,6 +2263,7 @@ pre code {
 .col-xs-offset-0 {
     margin-left: 0
 }
+
 
 @media (min-width:768px) {
     .col-sm-1,
@@ -2480,7 +2481,7 @@ pre code {
         width: 25%
     }
     .col-md-2 {
-        width: 16.66666667%
+        width: 25%
     }
     .col-md-1 {
         width: 8.33333333%
