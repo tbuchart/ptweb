@@ -558,6 +558,7 @@ SOCIAL ICON
     padding-top: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
+    margin-right: 20px;
 }
 
 .navbar-custom .dropdown-menu > li{
@@ -604,6 +605,9 @@ SOCIAL ICON
 /* === About Section === */
 .short-info {
     margin-bottom: 40px;
+    font-size: 16px;
+    text-align: justify;
+    padding-right: 20px;
 }
 
 .short-info h3 {
@@ -628,8 +632,12 @@ SOCIAL ICON
 
 
 /*download-button*/
+
+.download-button {
+
+}
 .download-button a {
-    margin-right: 20px;
+    margin: auto;
     color: #fff;
 }
 .download-button a i {
@@ -1519,6 +1527,7 @@ Icon for all respective meta
 
 /* === Contact Section === */
 .contact-section  {
+    background-image:url(../images/fondrubrique.png);
   
 }
 
@@ -1536,6 +1545,7 @@ Icon for all respective meta
 
 .contact-form .btn {
     margin-top: 15px;
+
 }
 
 .contact-section div > i{
